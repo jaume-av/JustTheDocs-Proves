@@ -93,24 +93,18 @@ a:hover {
   background-color: #f6f8fa !important; /* Fons del footer */
 }
 
-/* Ajustar el fons i espaiat dels blocs de codi */
+/* Blocs de codi o text preformat amb fons verd molt clar */
 pre, code {
   font-family: 'Consolas', monospace !important; /* Consolas per al codi */
-  font-size: 12px !important; /* Tamany de lletra a 12px per evitar solapaments */
+  font-size: 12px !important; /* Tamany 12px per al codi */
   font-weight: bold !important; /* Negreta per al codi */
-  background-color: #f0f8f7 !important; /* Gris verdós molt clar */
-  color: #000000 !important; /* Color negre per al text */
+  background-color: #f0f8f7 !important; /* Fons gris verdós molt clar */
+  color: #000000 !important; /* Color de text negre */
   padding: 12px !important; /* Més espai dins dels blocs */
   line-height: 1.6 !important; /* Augmentar l'alçada de línia per evitar solapaments */
   border-radius: 5px !important; /* Cants arrodonits per fer-ho més agradable */
   overflow-x: auto !important; /* Afegir desplaçament horitzontal si el text és llarg */
   white-space: pre-wrap !important; /* Evitar que el text se solapi */
-}
-
-/* Ajustar les taules per al contingut en codi */
-table code {
-  background-color: #f0f8f7 !important; /* Assegurar que les cel·les amb codi tinguin el mateix fons */
-  padding: 5px !important; /* Afegir espaiat a les cel·les de taula amb codi */
 }
 
 /* Estil per a la barra lateral amb fons verd clar */
@@ -139,4 +133,10 @@ th, td {
   border: 1px solid #000000 !important;
   padding: 10px !important;
   text-align: left !important;
+}
+
+/* Ajustar les taules per al contingut en codi */
+table code {
+  background-color: #f0f8f7 !important; /* Fons gris verdós clar per a les cel·les amb codi */
+  padding: 5px !important; /* Espaiat en codi dins de les taules */
 }
