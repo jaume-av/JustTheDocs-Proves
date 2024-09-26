@@ -1,15 +1,13 @@
 title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+description: A starter template for a Jekyll site using the Just the Docs theme!
 theme: just-the-docs
 
-url: https://jaume-av.github.io/LLMM/
-
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+url: https://jaume-av.github.io
+baseurl: "/LLMM" # Afegeix el nom del repositori per a GitHub Pages
 
 # Afegeix el fitxer CSS personalitzat
 include:
   - assets/css/custom.css
 
-  baseurl: "/LLMM"
-
+aux_links:
+  Template Repository: https://github.com/just-the-docs/just-the-docs-template
