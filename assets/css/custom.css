@@ -8,52 +8,52 @@ body {
   padding: 0 !important;
 }
 
-/* Ajustar el layout general del contenedor principal */
+/* Ajuste del contenido principal */
 .main-content {
+  padding-left: 0 !important; /* Quita el margen izquierdo */
   margin-left: 0 !important;
-  padding-left: 0 !important;
-  max-width: 85% !important; /* Ocupa más espacio horizontal */
-  margin-right: auto !important; /* Mantén margen automático en el lado derecho */
+  max-width: 100% !important; /* El contenido ocupa todo el ancho */
+  margin-right: auto !important; /* Mantén el margen automático a la derecha */
 }
 
-/* Estil per a la barra lateral (TOC) */
+/* Restablecer el estilo original del TOC (barra lateral) */
 .sidebar {
-  width: 150px !important; /* Haz la barra lateral más estrecha */
-  background-color: #e6f5e6 !important;
-  padding: 10px !important;
-  position: fixed !important; /* Mantén la barra lateral fija */
-  top: 0;
-  left: 0;
-  height: 100%; /* Fija la barra lateral a toda la altura */
+  background-color: #f6f8fa !important; /* Restablecer el fondo original */
+  padding: 15px !important;
+  width: 240px !important; /* Valor original */
+  position: relative !important;
 }
 
-/* Ajustes para contenido responsivo */
-@media (min-width: 768px) {
-  .main-content {
-    margin-left: 160px !important; /* Deja espacio para la barra lateral fija */
-    max-width: calc(100% - 160px) !important; /* Ocupa el espacio restante */
-  }
+/* Ajustes en la tipografía y colores del TOC */
+.nav-list a {
+  font-family: 'Calibri', sans-serif !important; /* Cambiar la fuente a Calibri */
+  color: #12450b !important; /* Verde oscuro para los enlaces del menú lateral */
+}
+
+.nav-list a:hover {
+  color: #2da41e !important; /* Verde claro en hover */
 }
 
 /* Estilos para los títulos */
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: 'Calibri', sans-serif !important;
-  color: #12450b !important;
-  background-color: #e6f5e6 !important;
+  color: #556b2f !important; /* Verde oliva más oscuro */
+  background-color: #e6f5e6 !important; /* Fondo verde claro */
   padding: 10px !important;
   margin-bottom: 20px !important;
   font-weight: bold !important;
   border-radius: 5px !important;
 }
 
-/* Enlaces del menú lateral */
-.nav-list a {
+/* Títulos de nivel 3 a 5, sin sombreado */
+h3, h4, h5 {
   font-family: 'Calibri', sans-serif !important;
-  color: #12450b !important;
-}
-
-.nav-list a:hover {
-  color: #2da41e !important;
+  color: #556b2f !important; /* Verde oliva más oscuro */
+  padding: 10px !important;
+  margin-bottom: 10px !important;
+  font-weight: bold !important;
+  border-radius: 0px !important; /* Sin bordes redondeados */
+  background-color: transparent !important; /* Sin fondo */
 }
 
 /* Bloques de código */
