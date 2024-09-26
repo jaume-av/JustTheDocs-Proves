@@ -1,0 +1,54 @@
+/* Canvia la font a Calibri */
+body {
+  font-family: 'Calibri', sans-serif;
+  font-size: 11px; /* Tamany de lletra general */
+  color: var(--color-text-primary); /* Manté el color de text per defecte */
+}
+
+/* Personalització dels títols */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 20px; /* Tamany de lletra dels títols */
+  color: #808000; /* Verd oliva */
+  font-weight: bold; /* Els títols solen ser en negreta */
+}
+
+/* Colors per defecte de Just the Docs que pots modificar */
+:root {
+  /* Colors de text */
+  --color-text-primary: #24292e; /* Color del text principal */
+  --color-text-secondary: #586069; /* Color del text secundari */
+  --color-text-tertiary: #6a737d; /* Color del text terciari */
+  
+  /* Colors dels enllaços */
+  --color-link: #0366d6; /* Color de l'enllaç */
+  --color-link-hover: #0056b3; /* Color de l'enllaç en hover */
+  
+  /* Colors de fons */
+  --color-bg-primary: #ffffff; /* Color de fons principal */
+  --color-bg-secondary: #f6f8fa; /* Color de fons secundari */
+  --color-bg-tertiary: #e1e4e8; /* Color de fons terciari */
+  
+  /* Colors de la navegació (sidebar) */
+  --color-sidebar-bg: #f6f8fa; /* Color de fons de la barra lateral */
+  --color-sidebar-link: #24292e; /* Color dels enllaços de la barra lateral */
+  --color-sidebar-link-hover: #0366d6; /* Color dels enllaços de la barra lateral en hover */
+  --color-sidebar-heading: #24292e; /* Color dels encapçalaments de la barra lateral */
+  
+  /* Colors del footer */
+  --color-footer-bg: #f6f8fa; /* Color de fons del footer */
+  --color-footer-text: #6a737d; /* Color del text del footer */
+  
+  /* Colors de la barra de navegació (header) */
+  --color-header-bg: #24292e; /* Color de fons de la barra de navegació */
+  --color-header-text: #ffffff; /* Color del text de la barra de navegació */
+  --color-header-link: #ffffff; /* Color dels enllaços de la barra de navegació */
+  --color-header-link-hover: #e1e4e8; /* Color dels enllaços en hover a la barra de navegació */
+  
+  /* Colors de les alertes */
+  --color-alert-info-bg: #f1f8ff; /* Fons de les alertes informatives */
+  --color-alert-info-text: #0366d6; /* Text de les alertes informatives */
+  --color-alert-warning-bg: #fffbdd; /* Fons de les alertes d'advertència */
+  --color-alert-warning-text: #735c0f; /* Text de les alertes d'advertència */
+  --color-alert-danger-bg: #ffeef0; /* Fons de les alertes de perill */
+  --color-alert-danger-text: #d73a49; /* Text de les alertes de perill */
+}

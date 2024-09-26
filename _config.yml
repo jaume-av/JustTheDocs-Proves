@@ -6,3 +6,7 @@ url: https://jaume-av.github.io/LLMM/
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+# Afegeix el fitxer CSS personalitzat
+include:
+  - assets/css/custom.css
