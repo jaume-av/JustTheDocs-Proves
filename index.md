@@ -4,95 +4,233 @@ layout: home
 ---
 
 
-# Vista prèvia dels colors del CSS personalitzat
 
-A continuació, es mostra una llista de tots els elements que utilitzen els colors personalitzats definits al CSS.
+# Llenguatges de Marques - JSON
 
-## 1. Colors del text
+## JSON
 
-- **Text principal:** Aquest text utilitza el color `--color-text-primary` <span style="color: #24292e;">(#24292e)</span>
-- **Text secundari:** Aquest text utilitza el color `--color-text-secondary` <span style="color: #586069;">(#586069)</span>
-- **Text terciari:** Aquest text utilitza el color `--color-text-tertiary` <span style="color: #6a737d;">(#6a737d)</span>
+### JavaScript Object Notation
 
-## 2. Colors dels enllaços
+- JSON (JavaScript Object Notation). És un “format de notació de dades” lleuger utilitzat tant per a guardar informació com per a l’intercanvi de dades entre aplicacions.
+- No es defineix com llenguatge de marques ja que no usa etiquetes com HTML o XML.
+- Els arxius JSON són arxius de text i usen l'extensió `.json`.
+- La seua principal característica és que és un llenguatge autodescriptiu i fàcil de llegir i d’escriure tant per les màquines com per els humans.
+- És una alternativa més simple i lleugera a XML que compta amb funcions similars.
+- JSON és un estàndard ampliament acceptat en la comunicació entre clients i servidors.
+- La majoria dels llenguatges de programació tenen suport integrat per a la manipulació de JSON.
+- És una eina versàtil per a l'emmagatzematge de dades i la configuració d'aplicacions.
 
-- **Enllaç normal:** Utilitza el color `--color-link` <span style="color: #12450b;">(#12450b)</span>. [Exemple d'enllaç](#)
-- **Enllaç en hover:** Quan passes el cursor per sobre de l'enllaç, es canvia a `--color-link-hover` <span style="color: #2da41e;">(#2da41e)</span>
+## 1.- Sintaxi JSON
 
-## 3. Colors de fons
+JSON utilitza una estructura basada en parelles clau-valor (keys - values):
 
-- **Fons principal:** Aquest bloc utilitza el color `--color-bg-primary` (#ffffff)
-  ```html
-  <div style="background-color: #ffffff; padding: 10px;">
-    Exemple de fons principal.
-  </div>
-  ```
+- Les claus (keys) són cadenes de caràcters (strings) envoltats entre cometes “ ”.
+- Els valors (values) són un tipus de dades JSON vàlids.
+- Les dades es separen per comes.
 
-- **Fons secundari:** Aquest bloc utilitza el color `--color-bg-secondary` (#f6f8fa)
-  ```html
-  <div style="background-color: #f6f8fa; padding: 10px;">
-    Exemple de fons secundari.
-  </div>
-  ```
-
-- **Fons terciari:** Aquest bloc utilitza el color `--color-bg-tertiary` (#e1e4e8)
-  ```html
-  <div style="background-color: #e1e4e8; padding: 10px;">
-    Exemple de fons terciari.
-  </div>
-  ```
-
-## 4. Colors de la barra lateral
-
-- **Color dels enllaços de la barra lateral:** Utilitza el color `--color-sidebar-link` <span style="color: #12450b;">(#12450b)</span>
-- **Color dels enllaços en hover de la barra lateral:** Quan passes el cursor per sobre d'un enllaç, utilitza el color `--color-sidebar-link-hover` <span style="color: #2da41e;">(#2da41e)</span>
-- **Color dels encapçalaments de la barra lateral:** Utilitza el color `--color-sidebar-heading` <span style="color: #12450b;">(#12450b)</span>
-
-## 5. Colors del footer
-
-- **Color del text del footer:** Utilitza el color `--color-footer-text` <span style="color: #6a737d;">(#6a737d)</span>
-- **Fons del footer:** Utilitza el color `--color-footer-bg` <span style="background-color: #f6f8fa;">(#f6f8fa)</span>
-
-## 6. Colors de la barra de navegació (header)
-
-- **Color del text de la barra de navegació:** Utilitza el color `--color-header-text` <span style="color: #ffffff;">(#ffffff)</span>
-- **Color dels enllaços de la barra de navegació:** Utilitza el color `--color-header-link` <span style="color: #12450b;">(#12450b)</span>
-- **Color dels enllaços en hover de la barra de navegació:** Quan passes el cursor per sobre d'un enllaç, utilitza el color `--color-header-link-hover` <span style="color: #2da41e;">(#2da41e)</span>
-
-## 7. Colors de les alertes
-
-### Alerta informativa
-<div style="background-color: #f1f8ff; color: #12450b; padding: 10px;">
-  Aquesta és una alerta informativa amb color de fons `--color-alert-info-bg` (#f1f8ff) i text `--color-alert-info-text` (#12450b).
-</div>
-
-### Alerta d'advertència
-<div style="background-color: #fffbdd; color: #735c0f; padding: 10px;">
-  Aquesta és una alerta d'advertència amb color de fons `--color-alert-warning-bg` (#fffbdd) i text `--color-alert-warning-text` (#735c0f).
-</div>
-
-### Alerta de perill
-<div style="background-color: #ffeef0; color: #d73a49; padding: 10px;">
-  Aquesta és una alerta de perill amb color de fons `--color-alert-danger-bg` (#ffeef0) i text `--color-alert-danger-text` (#d73a49).
-</div>
+```json
+{ "key":"value", "key1":"value", "key2":"value" }
 ```
 
-### **Explicació del contingut:**
+En JSON els valors admeten els següents tipus de dades:
 
-- **Text**: Mostra els colors aplicats al text principal, secundari i terciari utilitzant etiquetes **`span`** per visualitzar els colors.
-- **Enllaços**: Inclou exemples d'enllaços amb els colors configurats (normal i en hover).
-- **Fons**: Es mostren exemples de blocs amb els colors de fons principal, secundari i terciari.
-- **Barra lateral**: Mostra els colors dels enllaços i encapçalaments de la barra lateral.
-- **Footer**: Mostra els colors del text i el fons del footer.
-- **Barra de navegació**: Mostra els colors dels enllaços i el text de la barra de navegació (header).
-- **Alertes**: Es mostren les alertes amb els seus colors personalitzats.
+- **Cadenes de Text (Strings):** es representen amb cometes dobles, com "aquesta és una cadena". Poden contenir qualsevol caràcter Unicode.
+- **Números:** JSON admet nombres enters i decimals, sense notació especial. Ex: `42` o `3.14`.
+- **Booleans i Null:** JSON admet valors booleans, representats com `true` i `false`. Per a representar un valor nul utilitzem `null`.
 
-### **Instruccions:**
+```json
+{
+  "nom": "Aitor Tilla",
+  "edat": 26,
+  "estudiant": true,
+  "ciutat": "La Vall d'Uixó",
+  "puntuació": 5.5,
+  "comentari": "Aquest és un exemple de JSON amb diverses dades.",
+  "nulExemple": null
+}
+```
 
-1. Copia el contingut de l'**`index.md`** en el fitxer principal de la pàgina.
-2. Pujala al teu **repositori** o servidor.
-3. Revisa la pàgina per veure com es mostren visualment tots els colors i elements configurats en el teu **CSS** personalitzat.
+## 2.- Objectes JSON
 
-Aquesta pàgina és una manera visual i ràpida de comprovar que els colors s'estan aplicant correctament segons la teva configuració de **CSS**.
+Un objecte JSON és una col·lecció de parelles clau-valor, on les claus són cadenes de text i els valors poden ser de qualsevol tipus de dades suportat per JSON.
 
-Si tens més preguntes o vols ajustar alguna altra part, estic aquí per ajudar-te!
+```json
+{ "nom": "Aitor Tilla", "edat": 26, "moto": null }
+```
+
+Objecte JSON que representa un llibre:
+
+```json
+{
+  "títol": "El Gran Gatsby",
+  "autor": "F. Scott Fitzgerald",
+  "anyPublicació": 1925,
+  "editorial": "Scribner",
+  "disponible": true,
+  "crítiques": [4.5, 5.0, 4.2]
+}
+```
+
+Com es mostra a l’exemple, les claus ("títol", "autor", "anyPublicació", etc.) són cadenes de text. Els valors poden ser cadenes de text, nombres, booleans o fins i tot un array (com "crítiques") que conté valors numèrics.
+
+- Delimitats per `{}`.
+- S'organitzen en parells clau/valor.
+- Tipus de dades:
+  - Claus: string.
+  - Valors: string, number, object, array, boolean o null.
+- Claus i valors: Separats per dos punts.
+- Parells claus/valor: Separats per comes.
+
+## 3.- Arrays JSON
+
+Un Array JSON és una llista ordenada de valors:
+
+```json
+[ "Ford", "BMW", "Fiat" ]
+```
+
+Exemple d'Array que conté una llista de tasques:
+
+```json
+{
+  "tasques": ["Comprar llet", "Anar al gimnàs", "Estudiar per l'examen"]
+}
+```
+
+En aquest exemple, l'array està contingut dins de l'objecte com el valor associat a la clau "tasques". L'array conté tres cadenes de text que representen tasques diferents.
+
+## 4.- Combinacions d’Objectes i Arrays
+
+Les combinacions de dades en JSON són molt variades i flexibles, ja que podem anidar objectes dins d'objectes, arrays dins d'arrays i combinar-los segons les nostres necessitats. Algunes combinacions són:
+
+- **Objectes simples:**
+  ```json
+  { "nom": "Jaume", "edat": 18, "ciutat": "La Vall d'Uixó" }
+  ```
+
+- **Arrays simples:**
+  ```json
+  ["blau", "verd", "groc"]
+  ```
+
+- **Objectes dins d'objectes:**
+  ```json
+  {
+    "persona": { "nom": "Veronica", "edat": 28 },
+    "adreça": { "carrer": "Carrer Gran, 123", "ciutat": "Fodeguilla" }
+  }
+  ```
+
+- **Arrays dins d'arrays:**
+  ```json
+  [ [1, 2, 3], ["a", "b", "c"] ]
+  ```
+
+- **Objectes amb arrays:**
+  ```json
+  {
+    "noms": ["Gerard", "Jordi"],
+    "punts": [8.5, 7.0]
+  }
+  ```
+
+- **Arrays d'objectes:**
+  ```json
+  [
+    { "nom": "Vicent", "edat": 25 },
+    { "nom": "Carles", "edat": 29 }
+  ]
+  ```
+
+- **Arrays amb tipus de dades mixtes:**
+  ```json
+  [42, "groc", true, { "objecte": "aninat" }]
+  ```
+
+- **Objectes amb tipus de dades mixtes:**
+  ```json
+  {
+    "nom": "MariCarmen",
+    "edat": 30,
+    "actiu": true,
+    "aficions": ["lectura", "caminar"]
+  }
+  ```
+
+- **Objectes buits i arrays buits:**
+  ```json
+  {
+    "informacio": {},
+    "interessos": [],
+    "historial_compres": []
+  }
+  ```
+
+- **Valors nuls i valors booleans:**
+  ```json
+  {
+    "valor1": null,
+    "valor2": true,
+    "valor3": false
+  }
+  ```
+
+- **Arrays amb elements anidats:**
+  ```json
+  [ [1, 2, 3], ["a", "b", "c", [true, false]] ]
+  ```
+
+## 5.- Consideracions i Errors comuns en JSON
+
+- **Case-Sensitive:** Distingeix entre majúscules i minúscules.
+  ```json
+  { "nom": "Fina", "Nom": "Pepe" }
+  ```
+
+- **Format per un únic element (Array o Objecte):**
+  - Incorrecte:
+    ```json
+    [1, 2, 3], ["a", "b", "c"]
+    ```
+
+  - Correcte:
+    ```json
+    [ [1, 2, 3], ["a", "b", "c"] ]
+    ```
+
+  - Incorrecte:
+    ```json
+    { "nom": "Sergi", "edat": 21, }
+    ```
+
+  - Correcte:
+    ```json
+    { "nom": "Sergi", "edat": 21 }
+    ```
+
+- **No permet claus duplicades en un objecte:**
+  ```json
+  {
+    "color": "vermell",
+    "color": "blau"
+  }
+  ```
+
+- **No permet comentaris.**
+
+## 6.- Utilització caràcters especials i de control
+
+En JSON es poden usar caràcters especials, de control i caràcters Unicode escapats adequadament. Exemple:
+
+```json
+{
+  "missatge": "Aquest és un exemple amb caràcters especials: \"cometes dobles\". També conté línies noves:\nLínia 1\nLínia 2",
+  "barra_invertida": "Això és una barra invertida escapada: \\",
+  "tabulacio": "Això és una tabulació: \tTabulació 1\tTabulació 2",
+  "simbol": "Símbol de copyright © (c) representat com Unicode: \\u00A9",
+  "caracter_control": "Això és un caràcter de control representat com Unicode: \\u20AC"
+}
+```
+
+Nota: Poden trobar molts **validadors de JSON online**, com [jsonlint.com](https://jsonlint.com).
+
