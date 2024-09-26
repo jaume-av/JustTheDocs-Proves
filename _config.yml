@@ -10,3 +10,6 @@ aux_links:
 # Afegeix el fitxer CSS personalitzat
 include:
   - assets/css/custom.css
+
+  baseurl: "/LLMM"
+
