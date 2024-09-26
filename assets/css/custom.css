@@ -1,54 +1,54 @@
 /* Canvia la font a Calibri */
 body {
   font-family: 'Calibri', sans-serif !important;
-  font-size: 12px !important; /* Tamany de lletra general */
-  color: var(--color-text-primary) !important; /* Manté el color de text per defecte */
+  font-size: 12px !important;
+  color: var(--color-text-primary) !important;
 }
 
 /* Personalització dels títols */
 h1, h2, h3, h4, h5, h6 {
-  font-size: 20px !important; /* Tamany de lletra dels títols */
+  font-size: 20px !important;
   color: #12450b !important; /* Verd oliva */
-  font-weight: bold !important; /* Els títols solen ser en negreta */
+  font-weight: bold !important;
 }
 
 /* Colors per defecte de Just the Docs que pots modificar */
 :root {
   /* Colors de text */
-  --color-text-primary: #24292e !important; /* Color del text principal */
-  --color-text-secondary: #586069 !important; /* Color del text secundari */
-  --color-text-tertiary: #6a737d !important; /* Color del text terciari */
+  --color-text-primary: #24292e !important;
+  --color-text-secondary: #586069 !important;
+  --color-text-tertiary: #6a737d !important;
   
   /* Colors dels enllaços */
-  --color-link: #12450b !important; /* Color de l'enllaç */
-  --color-link-hover: #2da41e !important; /* Color de l'enllaç en hover */
+  --color-link: #12450b !important; /* Verd oliva per als enllaços */
+  --color-link-hover: #2da41e !important; /* Verd clar per als enllaços en hover */
   
   /* Colors de fons */
-  --color-bg-primary: #ffffff !important; /* Color de fons principal */
-  --color-bg-secondary: #f6f8fa !important; /* Color de fons secundari */
-  --color-bg-tertiary: #e1e4e8 !important; /* Color de fons terciari */
+  --color-bg-primary: #ffffff !important;
+  --color-bg-secondary: #f6f8fa !important;
+  --color-bg-tertiary: #e1e4e8 !important;
   
   /* Colors de la navegació (sidebar) */
-  --color-sidebar-bg: #f6f8fa !important; /* Color de fons de la barra lateral */
-  --color-sidebar-link: #24292e !important; /* Color dels enllaços de la barra lateral */
-  --color-sidebar-link-hover: #0366d6 !important; /* Color dels enllaços de la barra lateral en hover */
-  --color-sidebar-heading: #12450b !important; /* Color dels encapçalaments de la barra lateral */
+  --color-sidebar-bg: #f6f8fa !important;
+  --color-sidebar-link: #12450b !important; /* Verd oliva per als enllaços de la barra lateral */
+  --color-sidebar-link-hover: #2da41e !important; /* Verd clar per als enllaços en hover a la barra lateral */
+  --color-sidebar-heading: #12450b !important; /* Verd oliva per als encapçalaments de la barra lateral */
   
   /* Colors del footer */
-  --color-footer-bg: #f6f8fa !important; /* Color de fons del footer */
-  --color-footer-text: #6a737d !important; /* Color del text del footer */
+  --color-footer-bg: #f6f8fa !important;
+  --color-footer-text: #6a737d !important;
   
   /* Colors de la barra de navegació (header) */
-  --color-header-bg: #24292e !important; /* Color de fons de la barra de navegació */
-  --color-header-text: #ffffff !important; /* Color del text de la barra de navegació */
-  --color-header-link: #ffffff !important; /* Color dels enllaços de la barra de navegació */
-  --color-header-link-hover: #e1e4e8 !important; /* Color dels enllaços en hover a la barra de navegació */
+  --color-header-bg: #24292e !important;
+  --color-header-text: #ffffff !important;
+  --color-header-link: #12450b !important; /* Verd oliva per als enllaços de la barra de navegació */
+  --color-header-link-hover: #2da41e !important; /* Verd clar per als enllaços en hover a la barra de navegació */
   
   /* Colors de les alertes */
-  --color-alert-info-bg: #f1f8ff !important; /* Fons de les alertes informatives */
-  --color-alert-info-text: #0366d6 !important; /* Text de les alertes informatives */
-  --color-alert-warning-bg: #fffbdd !important; /* Fons de les alertes d'advertència */
-  --color-alert-warning-text: #735c0f !important; /* Text de les alertes d'advertència */
-  --color-alert-danger-bg: #ffeef0 !important; /* Fons de les alertes de perill */
-  --color-alert-danger-text: #d73a49 !important; /* Text de les alertes de perill */
+  --color-alert-info-bg: #f1f8ff !important;
+  --color-alert-info-text: #12450b !important; /* Verd oliva per al text de les alertes informatives */
+  --color-alert-warning-bg: #fffbdd !important;
+  --color-alert-warning-text: #735c0f !important;
+  --color-alert-danger-bg: #ffeef0 !important;
+  --color-alert-danger-text: #d73a49 !important;
 }
