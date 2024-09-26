@@ -1,14 +1,14 @@
 /* Canvia la font a Calibri */
 body {
   font-family: 'Calibri', sans-serif;
-  font-size: 11px; /* Tamany de lletra general */
+  font-size: 12px; /* Tamany de lletra general */
   color: var(--color-text-primary); /* Manté el color de text per defecte */
 }
 
 /* Personalització dels títols */
 h1, h2, h3, h4, h5, h6 {
   font-size: 20px; /* Tamany de lletra dels títols */
-  color: #808000; /* Verd oliva */
+  color: #12450b; /* Verd oliva */
   font-weight: bold; /* Els títols solen ser en negreta */
 }
 
@@ -20,8 +20,8 @@ h1, h2, h3, h4, h5, h6 {
   --color-text-tertiary: #6a737d; /* Color del text terciari */
   
   /* Colors dels enllaços */
-  --color-link: #0366d6; /* Color de l'enllaç */
-  --color-link-hover: #0056b3; /* Color de l'enllaç en hover */
+  --color-link: #12450b; /* Color de l'enllaç */
+  --color-link-hover: #2da41e; /* Color de l'enllaç en hover */
   
   /* Colors de fons */
   --color-bg-primary: #ffffff; /* Color de fons principal */
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   --color-sidebar-bg: #f6f8fa; /* Color de fons de la barra lateral */
   --color-sidebar-link: #24292e; /* Color dels enllaços de la barra lateral */
   --color-sidebar-link-hover: #0366d6; /* Color dels enllaços de la barra lateral en hover */
-  --color-sidebar-heading: #24292e; /* Color dels encapçalaments de la barra lateral */
+  --color-sidebar-heading: #12450b; /* Color dels encapçalaments de la barra lateral */
   
   /* Colors del footer */
   --color-footer-bg: #f6f8fa; /* Color de fons del footer */
