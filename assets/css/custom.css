@@ -108,10 +108,15 @@ pre, code {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Lleu ombra interna per separar millor */
 }
 
-/* Estil per a la barra lateral amb fons verd clar */
+/* Estil per a la barra lateral amb fons verd clar i amplada ajustada */
 .sidebar {
   background-color: #e6f5e6 !important; /* Fons verd molt clar per al menú lateral */
   padding: 10px !important;
+  width: 200px !important; /* Amplada més estreta per al menú lateral */
+}
+
+.main-content {
+  margin-left: 220px !important; /* Ajustar el contingut per l'amplada del menú */
 }
 
 /* Estil per a llistes */
