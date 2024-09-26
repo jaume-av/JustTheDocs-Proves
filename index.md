@@ -4,15 +4,6 @@ layout: home
 ---
 
 
-
-# **Contingut de l'`index.md`**
-
-```markdown
----
-title: Home
-layout: default
----
-
 # Vista prèvia dels colors del CSS personalitzat
 
 A continuació, es mostra una llista de tots els elements que utilitzen els colors personalitzats definits al CSS.
