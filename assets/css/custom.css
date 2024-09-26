@@ -93,7 +93,7 @@ a:hover {
   background-color: #f6f8fa !important; /* Fons del footer */
 }
 
-/* Blocs de codi o text preformat */
+/* Blocs de codi o text preformat sense vora */
 pre, code {
   font-family: 'Consolas', monospace !important; /* Consolas per al codi */
   font-size: 12px !important; /* Tamany 12px per al codi */
@@ -102,21 +102,22 @@ pre, code {
   color: #000000 !important; /* Color negre per al text */
   padding: 12px !important; /* Espai dins dels blocs de codi */
   line-height: 1.6 !important; /* Alçada de línia per evitar solapaments */
+  border: none !important; /* Eliminar les vores */
   border-radius: 5px !important; /* Cants arrodonits per un millor estil */
   overflow-x: auto !important; /* Desplaçament horitzontal si el text és llarg */
   white-space: pre-wrap !important; /* Evitar que el text es talli */
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Lleu ombra interna per separar millor */
+  box-shadow: none !important; /* Lleu ombra eliminada */
 }
 
-/* Estil per a la barra lateral amb fons verd clar i amplada ajustada */
+/* Estil per a la barra lateral amb fons verd clar i amplada encara més estreta */
 .sidebar {
   background-color: #e6f5e6 !important; /* Fons verd molt clar per al menú lateral */
   padding: 10px !important;
-  width: 200px !important; /* Amplada més estreta per al menú lateral */
+  width: 150px !important; /* Amplada encara més estreta per al menú lateral */
 }
 
 .main-content {
-  margin-left: 220px !important; /* Ajustar el contingut per l'amplada del menú */
+  margin-left: 170px !important; /* Ajustar el contingut per l'amplada del menú */
 }
 
 /* Estil per a llistes */
