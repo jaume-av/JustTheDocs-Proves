@@ -3,7 +3,7 @@ title: Home
 layout: home
 ---
 
-T
+
 ### **Explicació:**
 
 1. **Text principal i secundari**: Hi ha exemples que mostren com es veuen els diferents colors de text definits (principal, secundari, i terciari).
