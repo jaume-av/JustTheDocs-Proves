@@ -56,18 +56,36 @@ h3, h4, h5 {
   background-color: transparent !important; /* Sin fondo */
 }
 
-/* Bloques de código */
+/* Estilo para los bloques de código */
 pre, code {
-  font-family: 'Consolas', monospace !important;
-  font-size: 12px !important;
-  font-weight: bold !important;
-  background-color: #f5f5f5 !important;
-  color: #000000 !important;
-  padding: 15px !important;
-  line-height: 1.6 !important;
-  border: none !important;
-  border-radius: 5px !important;
-  margin: 10px 0 !important;
-  white-space: pre-wrap !important;
-  overflow-x: auto !important;
+  font-family: 'Consolas', monospace !important; /* Consolas para el código */
+  font-size: 12px !important; /* Ajuste del tamaño del texto */
+  font-weight: bold !important; /* Negrita para mejor visibilidad */
+  background-color: #f5f5f5 !important; /* Fondo gris claro */
+  color: #000000 !important; /* Texto negro */
+  padding: 15px !important; /* Espaciado interno suficiente */
+  line-height: 1.6 !important; /* Separación de líneas correcta */
+  border: 1px solid #ccc !important; /* Añade un borde gris claro */
+  border-radius: 5px !important; /* Bordes redondeados */
+  margin: 10px 0 !important; /* Espaciado externo adecuado */
+  white-space: pre-wrap !important; /* Ajusta líneas largas */
+  overflow-x: auto !important; /* Permite el desplazamiento horizontal si es necesario */
+  box-shadow: none !important; /* Elimina cualquier sombra */
+}
+
+/* Ajustes adicionales solo para los bloques de código */
+pre {
+  overflow-x: auto !important; /* Habilitar desplazamiento horizontal si es necesario */
+  word-wrap: normal !important; /* No corta las palabras dentro del código */
+  margin-bottom: 20px !important; /* Añade un margen inferior */
+}
+
+/* Ajustes de código inline */
+code {
+  background-color: #f5f5f5 !important; /* Fondo gris claro */
+  padding: 3px 5px !important; /* Padding interno */
+  border-radius: 3px !important; /* Bordes redondeados */
+  font-size: 12px !important; /* Ajuste de tamaño de fuente */
+  font-weight: bold !important; /* Negrita para el código inline */
+  color: #000 !important; /* Texto negro */
 }
