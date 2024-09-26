@@ -7,25 +7,51 @@ body {
   margin: 0 !important; /* Elimina marges extra */
 }
 
-/* Estils per als títols */
+/* Estils per als títols amb fons verd molt clar */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Calibri', sans-serif !important;
-  color: #12450b !important; /* Verd fosc */
+  color: #12450b !important; /* Verd fosc per als títols */
+  background-color: #e6f5e6 !important; /* Verd molt clar per al fons dels títols */
+  padding: 10px !important;
+  margin-bottom: 20px !important;
   font-weight: bold !important;
+  border-radius: 5px !important; /* Cants arrodonits als títols */
 }
 
-/* Estil per a la barra lateral (TOC) amb amplada ajustada */
+/* Elimina tot el marge esquerre del contingut */
+.main-content {
+  margin-left: 0 !important; /* Elimina el marge esquerre completament */
+  padding: 20px !important; /* Afegir una mica de padding per a l'espaiat */
+}
+
+/* Estil per a la barra lateral (TOC) encara més estreta */
 .sidebar {
   background-color: #e6f5e6 !important; /* Fons verd molt clar per al menú lateral */
   padding: 10px !important;
-  width: 180px !important; /* Amplada ajustada */
+  width: 150px !important; /* Amplada encara més estreta per al menú lateral */
 }
 
-.main-content {
-  margin-left: 200px !important; /* Ajustar el contingut perquè no se superposi amb la barra lateral */
+.navbar-brand {
+  font-size: 16px !important; /* Ajusta la mida del text del títol "Just the Docs Template" per cabre millor */
+  color: #12450b !important; /* Verd fosc per al text */
 }
 
-/* Estil per a enllaços */
+/* Ajustar el contingut del TOC per mantenir-lo clar */
+.nav-list {
+  font-size: 14px !important; /* Mida lleugerament més petita per al TOC */
+}
+
+/* Estil per als enllaços de la barra lateral */
+.nav-list a {
+  font-family: 'Calibri', sans-serif !important;
+  color: #12450b !important; /* Verd fosc per als enllaços de la barra lateral */
+}
+
+.nav-list a:hover {
+  color: #2da41e !important; /* Verd clar en hover */
+}
+
+/* Estil per a enllaços del text principal */
 a {
   font-family: 'Calibri', sans-serif !important;
   color: #12450b !important; /* Verd fosc per als enllaços */
@@ -37,32 +63,26 @@ a:hover {
   color: #2da41e !important; /* Verd clar en hover */
 }
 
-/* Blocs de codi o text preformat */
+/* Estil per a blocs de codi o text preformat */
 pre, code {
   font-family: 'Consolas', monospace !important; /* Consolas per al codi */
   font-size: 12px !important; /* Tamany 12px per al codi */
   font-weight: bold !important; /* Negreta per al codi */
   background-color: #f5f5f5 !important; /* Fons gris clar */
   color: #000000 !important; /* Color negre per al text */
-  padding: 15px !important; /* Augmenta el padding per millorar llegibilitat */
+  padding: 15px !important; /* Espai dins dels blocs de codi */
   line-height: 1.6 !important; /* Alçada de línia per evitar solapaments */
   border: none !important; /* Elimina les vores */
-  border-radius: 5px !important; /* Cants arrodonits */
+  border-radius: 5px !important; /* Cants arrodonits per un millor estil */
   margin: 10px 0 !important; /* Afegir espai abans i després del codi */
   white-space: pre-wrap !important; /* Evitar que el text es talli */
   overflow-x: auto !important; /* Afegir desplaçament horitzontal si cal */
 }
 
-/* Ajustos visuals per a les etiquetes de codi dins de blocs de text (com true, false, null) */
+/* Ajustos visuals per a les etiquetes de codi dins de blocs de text */
 code {
   background-color: #f5f5f5 !important; /* Fons gris clar */
-  padding: 3px 5px !important; /* Espaiat dins de les etiquetes de codi */
+  padding: 3px 5px !important; /* Espai dins de les etiquetes de codi */
   border-radius: 3px !important; /* Cants arrodonits */
-  font-size: 13px !important; /* Lleugerament més gran per millor llegibilitat */
-}
-
-/* Elimina marges extra */
-.container {
-  padding: 0 !important;
-  margin: 0 !important;
+  font-size: 13px !important; /* Mida lleugerament més gran per a millor llegibilitat */
 }
