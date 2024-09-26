@@ -7,8 +7,8 @@ body {
   margin: 0 !important; /* Elimina marges extra */
 }
 
-/* Estils per als títols amb fons verd molt clar */
-h1, h2, h3, h4, h5, h6 {
+/* Estils per als títols nivells 1 i 2 amb fons verd molt clar */
+h1, h2 {
   font-family: 'Calibri', sans-serif !important;
   color: #12450b !important; /* Verd oliva fosc per als títols */
   background-color: #e6f5e6 !important; /* Verd molt clar per al fons dels títols */
@@ -16,6 +16,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px !important;
   font-weight: bold !important;
   border-radius: 5px !important; /* Cants arrodonits als títols */
+  box-shadow: none !important; /* Elimina les ombres */
+}
+
+/* Estils per als títols nivells 3 a 6 sense fons ni ombra */
+h3, h4, h5, h6 {
+  font-family: 'Calibri', sans-serif !important;
+  color: #12450b !important; /* Verd oliva fosc per als títols */
+  padding: 10px !important;
+  margin-bottom: 20px !important;
+  font-weight: bold !important;
+  border-radius: 0px !important; /* Sense cants arrodonits */
+  background-color: transparent !important; /* Elimina el fons verd */
   box-shadow: none !important; /* Elimina les ombres */
 }
 
