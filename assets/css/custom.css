@@ -18,21 +18,22 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px !important; /* Cants arrodonits als títols */
 }
 
-/* Elimina tot el marge esquerre del contingut */
+/* Elimina tot el marge esquerre del contingut i amplada ajustada */
 .main-content {
-  margin-left: 0 !important; /* Elimina el marge esquerre completament */
+  margin-left: 170px !important; /* Redueix l'espai per deixar més lloc al contingut */
   padding: 20px !important; /* Afegir una mica de padding per a l'espaiat */
+  max-width: 90% !important; /* Assegura que el contingut ocupi més espai de la pantalla */
 }
 
-/* Estil per a la barra lateral (TOC) encara més estreta */
+/* Estil per a la barra lateral (TOC) més estreta */
 .sidebar {
   background-color: #e6f5e6 !important; /* Fons verd molt clar per al menú lateral */
   padding: 10px !important;
-  width: 150px !important; /* Amplada encara més estreta per al menú lateral */
+  width: 130px !important; /* Amplada reduïda de la barra lateral */
 }
 
 .navbar-brand {
-  font-size: 16px !important; /* Ajusta la mida del text del títol "Just the Docs Template" per cabre millor */
+  font-size: 16px !important; /* Ajusta la mida del text del títol "Just the Docs Template" */
   color: #12450b !important; /* Verd fosc per al text */
 }
 
@@ -51,16 +52,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #2da41e !important; /* Verd clar en hover */
 }
 
-/* Estil per a enllaços del text principal */
-a {
-  font-family: 'Calibri', sans-serif !important;
-  color: #12450b !important; /* Verd fosc per als enllaços */
-  text-decoration: none !important;
-}
-
-a:hover {
-  text-decoration: underline !important;
-  color: #2da41e !important; /* Verd clar en hover */
+/* Ajustar l'amplada total del contingut perquè sigui més ample */
+@media (min-width: 768px) {
+  .main-content {
+    max-width: 100% !important; /* Ocupa el màxim espai disponible a pantalles grans */
+  }
+  .sidebar {
+    width: 130px !important; /* Amplada mínima de la barra lateral */
+  }
 }
 
 /* Estil per a blocs de codi o text preformat */
