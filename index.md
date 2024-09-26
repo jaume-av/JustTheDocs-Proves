@@ -11,6 +11,8 @@ layout: home
 
 ### JavaScript Object Notation
 
+### JavaScript Object Notation
+
 - JSON (JavaScript Object Notation). És un “format de notació de dades” lleuger utilitzat tant per a guardar informació com per a l’intercanvi de dades entre aplicacions.
 - No es defineix com llenguatge de marques ja que no usa etiquetes com HTML o XML.
 - Els arxius JSON són arxius de text i usen l'extensió `.json`.
