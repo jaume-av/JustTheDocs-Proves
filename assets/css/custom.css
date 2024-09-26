@@ -1,54 +1,78 @@
-/* Canvia la font a Calibri */
+/* Estil base per al cos del document */
 body {
-  font-family: 'Calibri', sans-serif !important;
-  font-size: 22px !important;
-  color: var(--color-text-primary) !important;
+  font-family: 'Times New Roman', serif; /* Utilitza Times New Roman com a font base */
+  font-size: 16px; /* Tamany de lletra llegible */
+  color: #000000; /* Color de text negre */
+  line-height: 1.6; /* Alçada de línia per millorar la llegibilitat */
 }
 
-/* Personalització dels títols */
+/* Estils per als encapçalaments */
 h1, h2, h3, h4, h5, h6 {
-  font-size: 20px !important;
-  color: #12450b !important; /* Verd oliva */
-  font-weight: bold !important;
+  font-family: 'Arial', sans-serif; /* Utilitza Arial per als encapçalaments */
+  color: #000000; /* Color negre per als encapçalaments */
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
-/* Colors per defecte de Just the Docs que pots modificar */
-:root {
-  /* Colors de text */
-  --color-text-primary: #24292e !important;
-  --color-text-secondary: #586069 !important;
-  --color-text-tertiary: #6a737d !important;
-  
-  /* Colors dels enllaços */
-  --color-link: #12450b !important; /* Verd oliva per als enllaços */
-  --color-link-hover: #2da41e !important; /* Verd clar per als enllaços en hover */
-  
-  /* Colors de fons */
-  --color-bg-primary: #ffffff !important;
-  --color-bg-secondary: #f6f8fa !important;
-  --color-bg-tertiary: #e1e4e8 !important;
-  
-  /* Colors de la navegació (sidebar) */
-  --color-sidebar-bg: #f6f8fa !important;
-  --color-sidebar-link: #12450b !important; /* Verd oliva per als enllaços de la barra lateral */
-  --color-sidebar-link-hover: #2da41e !important; /* Verd clar per als enllaços en hover a la barra lateral */
-  --color-sidebar-heading: #12450b !important; /* Verd oliva per als encapçalaments de la barra lateral */
-  
-  /* Colors del footer */
-  --color-footer-bg: #f6f8fa !important;
-  --color-footer-text: #6a737d !important;
-  
-  /* Colors de la barra de navegació (header) */
-  --color-header-bg: #24292e !important;
-  --color-header-text: #ffffff !important;
-  --color-header-link: #12450b !important; /* Verd oliva per als enllaços de la barra de navegació */
-  --color-header-link-hover: #2da41e !important; /* Verd clar per als enllaços en hover a la barra de navegació */
-  
-  /* Colors de les alertes */
-  --color-alert-info-bg: #f1f8ff !important;
-  --color-alert-info-text: #12450b !important; /* Verd oliva per al text de les alertes informatives */
-  --color-alert-warning-bg: #fffbdd !important;
-  --color-alert-warning-text: #735c0f !important;
-  --color-alert-danger-bg: #ffeef0 !important;
-  --color-alert-danger-text: #d73a49 !important;
+/* Estil per a paràgrafs */
+p {
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Enllaços */
+a {
+  color: #1a0dab; /* Blau estàndard per als enllaços */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Subratlla els enllaços quan el cursor passa per sobre */
+}
+
+/* Estil per a blocs de codi o text preformat */
+pre, code {
+  font-family: 'Courier New', monospace; /* Utilitza Courier per a codi */
+  background-color: #f5f5f5; /* Fons gris clar */
+  color: #000000; /* Color de text negre */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Estil per a llistes */
+ul, ol {
+  margin-left: 20px;
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+/* Taules */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Colors per a text secundari */
+.text-secundari {
+  color: #555555; /* Gris fosc per a text secundari */
+}
+
+/* Alerta d'informació */
+.alert-info {
+  background-color: #d9edf7;
+  color: #31708f;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
