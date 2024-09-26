@@ -93,15 +93,21 @@ a:hover {
   background-color: #f6f8fa !important; /* Fons del footer */
 }
 
-/* Blocs de codi o text preformat */
+/* Blocs de codi o text preformat amb fons verd molt clar */
 pre, code {
   font-family: 'Consolas', monospace !important; /* Consolas per al codi */
   font-size: 12px !important; /* Tamany 12px per al codi */
   font-weight: bold !important; /* Negreta per al codi */
-  background-color: #f5f5f5 !important; /* Fons gris clar */
+  background-color: #e6f5e6 !important; /* Fons verd molt clar */
   color: #000000 !important; /* Color de text negre */
   padding: 10px !important;
   border-radius: 5px !important;
+}
+
+/* Estil per a la barra lateral amb fons verd clar */
+.sidebar {
+  background-color: #e6f5e6 !important; /* Fons verd molt clar per al menú lateral */
+  padding: 10px !important;
 }
 
 /* Estil per a llistes */
